@@ -1,4 +1,4 @@
 # Leetcode
-Easy -> 5 </br>
+Easy -> 6 </br>
 Medium -> 4</br>
 Hard -> 0
