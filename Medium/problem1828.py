@@ -5,12 +5,12 @@
 # Explanation: The points and circles are shown above.
 # queries[0] is the green circle, queries[1] is the red circle, and queries[2] is the blue circle.
 
-# Better complement: Runtime =  2444 ms ; Memory =  14.6 MB
+# Better implementation: Runtime =  2444 ms ; Memory =  14.6 MB
 class Solution:
     def countPoints(self, points: list[list[int]], queries: list[list[int]]) -> list[int]:
         return [sum(1 if (p_x-c_x)**2 + (p_y-c_y)**2 <= r**2 else 0 for p_x, p_y in points) for c_x, c_y, r in queries]
 
-# Original complement: Runtime =  2784 ms ; Memory =  14.5 MB
+# Original implementation: Runtime =  2784 ms ; Memory =  14.5 MB
 # class Solution:
 #     def countPoints(self, points: list[list[int]], queries: list[list[int]]) -> list[int]:
 #         count = [0] * len(queries)
